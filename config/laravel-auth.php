@@ -2,6 +2,6 @@
 return [
     'routes' => [
         'api_version' => 'v1',
-        'auth_prefix' => true
+        'auth_prefix' => 'auth'
     ]
 ];
