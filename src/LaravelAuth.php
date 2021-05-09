@@ -1,6 +1,6 @@
 <?php
 
-namespace MadboyDevelopers\LaravelAuth;
+namespace MadBoyDevelopers\LaravelAuth;
 
 class LaravelAuth
 {

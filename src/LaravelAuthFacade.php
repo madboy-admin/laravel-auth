@@ -1,6 +1,6 @@
 <?php
 
-namespace MadboyDevelopers\LaravelAuth;
+namespace MadBoyDevelopers\LaravelAuth;
 
 use Illuminate\Support\Facades\Facade;
 

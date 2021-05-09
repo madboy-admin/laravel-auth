@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MadboyDevelopers\\LaravelAuth\\": "src/"
+            "MadBoyDevelopers\\LaravelAuth\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MadboyDevelopers\\LaravelAuth\\Tests\\": "tests/"
+            "MadBoyDevelopers\\LaravelAuth\\Tests\\": "tests/"
         }
     },
     "extra": {

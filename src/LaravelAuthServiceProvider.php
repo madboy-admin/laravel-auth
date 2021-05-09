@@ -1,6 +1,6 @@
 <?php
 
-namespace MadboyDevelopers\LaravelAuth;
+namespace MadBoyDevelopers\LaravelAuth;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
