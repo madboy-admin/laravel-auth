@@ -1,0 +1,14 @@
+{
+    "name": "madboy-developers/laravel-auth",
+    "description": "This is laravel-auth package by MadBoy Developers.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hardik Modha",
+            "email": "hardik.d.modha@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
