@@ -16,7 +16,7 @@ class LaravelAuth
             ->namespace(self::$namespace)
             ->prefix(
                 config('laravel-auth.routes.api_version', '') . '/' .
-                config('laravel-auth.routes.api_version', 'auth_prefix')
+                config('laravel-auth.routes.auth_prefix', 'auth')
             )
             ->group(__DIR__ . '/../routes/web.php');
     }
