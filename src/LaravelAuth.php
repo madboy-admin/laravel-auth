@@ -12,9 +12,6 @@ class LaravelAuth
 
     public static function routes()
     {
-        $config = config('laravel-auth.routes', []);
-
-
         Route::middleware('web')
             ->namespace(self::$namespace)
             ->prefix(
