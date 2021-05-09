@@ -5,28 +5,22 @@ namespace MadBoyDevelopers\LaravelAuth;
 
 
 use Illuminate\Support\Facades\Route;
-use MadBoyDevelopers\LaravelAuth\Http\Controllers\AuthController;
 
 class LaravelAuth
 {
     private static string $namespace = 'MadBoyDevelopers\\LaravelAuth\\Http\\Controllers';
 
-    public static function apiRoutes()
+    public static function routes()
     {
         $config = config('laravel-auth.routes', []);
 
-        Route::group([
-            'namespace' => self::$namespace,
-            'prefix' => $config['api_version'] ?? ''
-        ], function () use ($config) {
 
-            // Auth prefix
-            Route::prefix($config['auth_prefix'] ?? '')->group(function () {
-
-                Route::get('/login', [AuthController::class, 'login']);
-
-            });
-
-        });
+        Route::middleware('web')
+            ->namespace(self::$namespace)
+            ->prefix(
+                config('laravel-auth.routes.api_version', '') . '/' .
+                config('laravel-auth.routes.api_version', 'auth_prefix')
+            )
+            ->group(base_path('../routes/web.php'));
     }
 }
