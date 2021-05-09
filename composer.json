@@ -13,7 +13,8 @@
     "require": {
         "php": "^8.0",
         "spatie/laravel-package-tools": "^1.7.0",
-        "spatie/laravel-permission": "^4.0"
+        "spatie/laravel-permission": "^4.0",
+        "laravel/sanctum": "^2.10"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0|^5.0|^6.0",
