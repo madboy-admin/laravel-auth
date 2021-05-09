@@ -21,11 +21,11 @@
     },
     "autoload": {
         "psr-4": {
-            "files": [
-                "src/helpers.php"
-            ],
             "MadBoyDevelopers\\LaravelAuth\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
