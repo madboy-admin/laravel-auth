@@ -30,5 +30,12 @@
             "MadboyDevelopers\\LaravelAuth\\Tests\\": "tests/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MadBoyDevelopers\\LaravelAuth\\LaravelAuthServiceProvider"
+            ]
+        }
+    },
     "prefer-stable": true
 }
