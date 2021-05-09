@@ -18,6 +18,6 @@ class LaravelAuth
                 config('laravel-auth.routes.api_version', '') . '/' .
                 config('laravel-auth.routes.api_version', 'auth_prefix')
             )
-            ->group(base_path('../routes/web.php'));
+            ->group(__DIR__ . '/../routes/web.php');
     }
 }
