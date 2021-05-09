@@ -21,6 +21,9 @@
     },
     "autoload": {
         "psr-4": {
+            "files": [
+                "src/helpers.php"
+            ],
             "MadBoyDevelopers\\LaravelAuth\\": "src/"
         }
     },

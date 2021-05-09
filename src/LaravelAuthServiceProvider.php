@@ -16,6 +16,7 @@ class LaravelAuthServiceProvider extends PackageServiceProvider
          */
         $package->name('laravel-auth')
             ->hasConfigFile('laravel-auth')
+            ->hasTranslations()
             ->hasMigration('create_users_table');
     }
 }
