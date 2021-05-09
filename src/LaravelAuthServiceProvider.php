@@ -15,7 +15,7 @@ class LaravelAuthServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package->name('laravel-auth')
-            ->hasConfigFile()
+            ->hasConfigFile('laravel-auth')
             ->hasViews()
             ->hasMigration('create_users_table');
     }
