@@ -50,6 +50,8 @@ class AuthController extends Controller
         if (!Auth::check())
             return json_response(false, 'User is not logged in!');
 
-        return json_response(true, 'User details.', ((array) Auth::user()));
+        $user = User::query()->find(Auth::id());
+
+        return json_response(true, 'User details.', $user);
     }
 }
