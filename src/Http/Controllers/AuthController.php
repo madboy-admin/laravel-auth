@@ -40,4 +40,16 @@ class AuthController extends Controller
 
         return json_response(false, trans('laravel-auth::laravel-auth.email_password_wrong'));
     }
+
+    /**
+     * Get logged in user details.
+     * @return JsonResponse
+     */
+    public function me(): JsonResponse
+    {
+        if (!Auth::check())
+            return json_response(false, 'User is not logged in!');
+
+        return json_response(true, 'User details.', ((array) Auth::user()));
+    }
 }
