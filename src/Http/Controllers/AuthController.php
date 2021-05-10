@@ -26,12 +26,13 @@ class AuthController extends Controller
         if ($validator->fails())
             return json_response(false, $validator->errors()->first());
 
-        /** @var User $user_class */
         $user_class = config('laravel-auth.models.user', User::class);
+        if (!class_exists($user_class))
+            $user_class = User::class;
         /*
          * Setting up User Model using config model path.
          */
-        Auth::setUser($user_class);
+        Auth::setUser(new $user_class);
 
         if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
             return json_response(true, trans('laravel-auth::laravel-auth.success_login'));
