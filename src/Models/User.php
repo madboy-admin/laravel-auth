@@ -21,8 +21,12 @@ class User extends Authenticatable
         'password',
     ];
 
-    public function getTable()
-    {
-        return config('laravel-auth.tables.users', parent::getTable());
-    }
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password'
+    ];
 }
